@@ -2,10 +2,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Brain, Shield, TrendingUp, Zap, Rocket, DollarSign, ChevronRight } from "lucide-react"
+import { BackgroundBeams } from "@/components/ui/background-beams"
+import { Spotlight } from "@/components/ui/spotlight"
+import { DockDemo } from "@/components/dock"
 
 export default function AITokenLanding() {
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* HEADER */}
       <header className="border-b border-neutral-800 sticky top-0 z-50 bg-black/80 backdrop-blur-md">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between max-w-7xl">
           <div className="flex items-center space-x-2">
@@ -15,15 +19,9 @@ export default function AITokenLanding() {
             <span className="font-semibold text-xl">AI Meme Coin</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-sm text-neutral-400 hover:text-white transition-colors">
-              Features
-            </a>
-            <a href="#about" className="text-sm text-neutral-400 hover:text-white transition-colors">
-              About
-            </a>
-            <a href="#roadmap" className="text-sm text-neutral-400 hover:text-white transition-colors">
-              Roadmap
-            </a>
+            <a href="#features" className="text-sm text-neutral-400 hover:text-white transition-colors">Features</a>
+            <a href="#about" className="text-sm text-neutral-400 hover:text-white transition-colors">About</a>
+            <a href="#roadmap" className="text-sm text-neutral-400 hover:text-white transition-colors">Roadmap</a>
           </nav>
           <Button className="bg-white text-black hover:bg-neutral-200 font-medium">
             Buy Now
@@ -31,9 +29,15 @@ export default function AITokenLanding() {
           </Button>
         </div>
       </header>
-
-      <section className="py-24 px-6">
-        <div className="container mx-auto text-center max-w-4xl">
+      
+      {/* HERO SECTION WITH BACKGROUND */}
+      <section className="relative py-24 px-6 border-b border-neutral-800 overflow-hidden">
+        <Spotlight
+          className="-top-40 left-0 md:-top-20 md:left-60 z-20"
+          fill="white"
+        />
+        <BackgroundBeams className="absolute inset-0 z-0" />
+        <div className="container mx-auto text-center max-w-4xl relative z-10">
           <Badge variant="secondary" className="mb-6 bg-neutral-900 text-neutral-300 border-neutral-800">
             🚀 Just Launched on Solana
           </Badge>
@@ -54,13 +58,14 @@ export default function AITokenLanding() {
             <Button
               size="lg"
               variant="outline"
-              className="border-neutral-700 text-white hover:bg-neutral-900 font-medium text-lg px-8 py-4 bg-transparent"
+              className="border-neutral-700 text-white hover:bg-neutral-900 font-medium text-lg px-8 py-4"
             >
               View Roadmap
               <ChevronRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
 
+          {/* STATS */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-t border-neutral-800 pt-16">
             <div>
               <div className="text-3xl font-bold mb-2">Just Launched</div>
