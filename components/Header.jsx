@@ -14,7 +14,7 @@ export default function Header() {
         {/* Лого + ссылки */}
         <div className="flex items-center space-x-8">
           <Image
-            src="/logo_white.png"
+            src="/logo_white_on_transperent.png"
             alt="logo"
             width={120}
             height={120}
