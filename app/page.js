@@ -159,7 +159,7 @@ export default function AITokenLanding() {
           <div className="text-center mb-16">
             <h2 className="font-bold text-4xl md:text-5xl mb-4">Why This Meme Coin is Different</h2>
             <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
-              Not just another meme coin - we're building the future of AI with every trade
+              {"Not just another meme coin - we're building the future of AI with every trade"}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -184,7 +184,7 @@ export default function AITokenLanding() {
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="font-bold text-4xl md:text-5xl mb-6">Join the AI Revolution</h2>
           <p className="text-xl text-neutral-400 mb-12 max-w-2xl mx-auto">
-            This is more than a meme coin - it's a movement. Every holder contributes to building the future of AI.
+            {"This is more than a meme coin - it's a movement. Every holder contributes to building the future of AI."}
           </p>
           <Button size="lg" className="bg-white text-black hover:bg-neutral-200 font-medium text-xl px-12 py-6">
             <Rocket className="mr-2 w-6 h-6" />
