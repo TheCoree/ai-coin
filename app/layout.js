@@ -12,8 +12,8 @@ const unboundedDisplay = Unbounded({
 })
 
 export const metadata = {
-  title: "corede — свобода в коде",
-  description: "Личный сайт разработчика corede. Python, Linux, React и всё, что интересно.",
+  title: "AICOIN | A brand new Solana meme coin with a real purpose.",
+  description: "Every profit goes directly into AI development. Our goal: reach $50M+ market cap while building the future of artificial intelligence.",
 }
 
 export default function RootLayout({ children }) {
